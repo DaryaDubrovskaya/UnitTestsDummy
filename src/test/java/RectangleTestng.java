@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 public class RectangleTestng {
 
@@ -8,28 +8,28 @@ public class RectangleTestng {
 
     @Test
     public void lengthTest() {
-        assertEquals("The length is not correct!", 15.9, rectangle.getLength());
+        assertEquals(rectangle.getLength(), 15.9, "The length is not correct!");
     }
 
     @Test
     public void widthTest() {
-        assertEquals("The width is not correct!", 4.7, rectangle.getWidth());
+        assertEquals(rectangle.getWidth(), 4.7, "The width is not correct!");
     }
 
     @Test
     public void setLengthTest() {
         rectangle.setLength(10.56);
-        assertEquals("Method setLength doesn't work correct!", 10.56, rectangle.getLength());
+        assertEquals(rectangle.getLength(), 10.56, "Method setLength doesn't work correct!");
     }
 
     @Test
     public void setWidthTest() {
         rectangle.setWidth(8.72);
-        assertEquals("Method setWidth doesn't work correct!", 8.72, rectangle.getWidth());
+        assertEquals(rectangle.getWidth(), 8.72, "Method setWidth doesn't work correct!");
     }
 
     @Test
     public void areaTest() {
-        assertEquals("The area is not correct!", 74.73, rectangle.getArea());
+        assertEquals(rectangle.getArea(), 74.73, "The area is not correct!");
     }
 }

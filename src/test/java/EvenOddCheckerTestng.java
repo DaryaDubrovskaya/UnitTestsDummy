@@ -1,33 +1,33 @@
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 public class EvenOddCheckerTestng {
 
-    EvenOddChecker evenOddChecker = new EvenOddChecker ();
+    EvenOddChecker evenOddChecker = new EvenOddChecker();
 
     @Test
     public void checkEvenTest() {
-        assertEquals("Method check doesn't work correct!", true, evenOddChecker.check(4));
+        assertEquals(evenOddChecker.check(4), true, "Method check doesn't work correct!");
     }
 
     @Test
     public void checkOddTest() {
-        assertEquals("Method check doesn't work correct!", false, evenOddChecker.check(7));
+        assertEquals(evenOddChecker.check(7), false, "Method check doesn't work correct!");
     }
 
     @Test
     public void checkNegEvenTest() {
-        assertEquals("Method check doesn't work correct!", true, evenOddChecker.check(-4));
+        assertEquals(evenOddChecker.check(-4), true, "Method check doesn't work correct!");
     }
 
     @Test
     public void checkNegOddTest() {
-        assertEquals("Method check doesn't work correct!", false, evenOddChecker.check(-7));
+        assertEquals(evenOddChecker.check(-7), false, "Method check doesn't work correct!");
     }
 
     @Test
     public void checkZeroTest() {
-        assertEquals("Method check doesn't work correct!", true, evenOddChecker.check(0));
+        assertEquals(evenOddChecker.check(0), true, "Method check doesn't work correct!");
     }
 }

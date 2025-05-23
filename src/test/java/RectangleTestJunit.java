@@ -4,6 +4,26 @@ import static junit.framework.TestCase.assertEquals;
 
 public class RectangleTestJunit {
 
+    public static void main(String[] args) {
+//        new RectangleTestJunit().lengthTest();
+//
+//        RectangleTestJunit t1 = new RectangleTestJunit();
+//        t1.lengthTest();
+//        t1.areaTest();
+
+        new RectangleTestJunit();
+        new RectangleTestJunit();
+    }
+
+    static {
+        System.out.println("I'm static");
+    }
+
+    {
+        System.out.println("I'm not static");
+    }
+
+
     Rectangle rectangle = new Rectangle(15.9, 4.7);
 
         @Test
