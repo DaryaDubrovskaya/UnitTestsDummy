@@ -1,11 +1,10 @@
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.Assert.assertEquals;
 
 public class CalculatorTestng {
 
-    Calculator calculator = new Calculator ();
+    Calculator calculator = new Calculator();
 
     @Test
     public void addTest() {

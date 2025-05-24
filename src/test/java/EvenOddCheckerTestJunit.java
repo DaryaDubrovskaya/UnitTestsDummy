@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 public class EvenOddCheckerTestJunit {
 
-    EvenOddChecker evenOddChecker = new EvenOddChecker ();
+    EvenOddChecker evenOddChecker = new EvenOddChecker();
 
     @Test
     public void checkEvenTest() {
