@@ -26,8 +26,13 @@ public class CalculatorTestJunit {
         assertEquals("Method divide doesn't work correct!", 2, calculator.divide(14, 7));
     }
 
-    @Test
+//    @Test
+//    public void divideByZeroTest() {
+//        assertEquals("Method divide doesn't work correct!", 0, calculator.divide(14, 0)); // как указать в expected ошибку ?
+//    }
+
+    @Test(expected = ArithmeticException.class) //ожидаем ошибку при делении на 0
     public void divideByZeroTest() {
-        assertEquals("Method divide doesn't work correct!", 0, calculator.divide(14, 0)); // как указать в expected ошибку ?
+        calculator.divide(14, 0);
     }
 }
